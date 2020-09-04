@@ -30,7 +30,7 @@ else if(r=='c'||r=='C'){
 e--;
 	tag[t]=1;}
 	else 
-		cout<<"Invalid Input;";
+		cout<<"Invalid Input;"; t--; continue;
 }
 /*for(int t=0;t<n;t++){
 	cout<<tag[t]<<"  ";
