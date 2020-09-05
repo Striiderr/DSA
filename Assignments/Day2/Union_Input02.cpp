@@ -6,35 +6,29 @@ union u{
 };
 int main()
 {
-	cout<<"Enter No of entries:";
+
 	int n;
-	cin>>n;
+n=9;
 	union u a[n];
 int tag[n]; 
 
 for(int t=0;t<n;t++){
-cout<<"Choose 'I' for int and 'c' for char:";
-char r;
-cin>>r;
-if(r=='I'||r=='i'){  
-  cout<<"Enter Integer:";
+
+if(t%2==0){  
   cin>>a[t].i;
 
 
 	tag[t]=0;
 }
-else if(r=='c'||r=='C'){  
-   cout<<"Enter Character:";
+else if(t%2!=0){  
   cin>>a[t].c;
 
 	tag[t]=1;}
-	else 
-		cout<<"Invalid Input;"; t--; continue;
+
 }
 /*for(int t=0;t<n;t++){
 	cout<<tag[t]<<"  ";
 }*/
-cout<<"\n";
 for(int t=0;t<n;t++){
 
 if(tag[t]==0){
@@ -46,6 +40,6 @@ if(tag[t]==1){
 
 
 }
-cout<<endl;
+
 return 0;
 }
