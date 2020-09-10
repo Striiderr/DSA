@@ -3,7 +3,7 @@ using namespace std;
 void trip(int a[],int n){
   int d,b,c;
   int i=0,chec=0;
-  for(int o=0;o<n;o++){
+  for(int o=i+1;o<n;o++){
     d=a[i];
     if(a[o]>d){
     	b=a[o];
@@ -22,7 +22,9 @@ void trip(int a[],int n){
    if(chec==1){
        	break;
        }
-  
+   else{
+   	i++;
+}  
 
 }
 
@@ -31,7 +33,7 @@ cout<<"("<<d<<","<<b<<","<<c<<")";
 }
 
 int main(){
-int a[7]= { 5, 4, 3, 7, 6, 1, 9 }; 
+int a[7]= { 11, 4, 3, 7, 6, 1, 9 }; 
  trip(a,7);
 	return 0;
 }
