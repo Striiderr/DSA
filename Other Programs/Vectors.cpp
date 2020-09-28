@@ -19,7 +19,7 @@ else
 cout<<"Vector is not empty\n";
 cout<<v.front()<<"\n";
 cout<<v.back()<<"\n";
-cout<<v.at(5)<<"\n";
+cout<<v.at(2)<<"\n";
 
 return 0;
 }
