@@ -1,3 +1,5 @@
+//For segerating even and odd numbers within an array 
+// Used bubble sort
 #include<iostream>
 using namespace std; 
   

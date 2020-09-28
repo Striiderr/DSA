@@ -1,4 +1,6 @@
-
+//For segerating even and odd numbers within an array 
+// Used bubble sort
+//Used COmmand line Arguments
 #include<iostream>
 #include <algorithm> 
 using namespace std; 
