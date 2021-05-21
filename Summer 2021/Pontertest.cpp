@@ -1,23 +1,15 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-
-int main(){
-int i=5,*p,j=7,*q;
-p=&i;
-q=&j;
-cout<<i<<j<<*p<<*q<<endl;
-*p=i+*q;
-cout<<i<<j<<*p<<*q<<endl;
-j=*p+i;
-cout<<i<<j<<*p<<*q<<endl;
-p=q;
-
-j=*p+i;
-cout<<i<<j<<*p<<*q<<endl;
-i=*q+j;
-cout<<i<<j<<*p<<*q;
-
-
+int main()
+{
+    int i = 5, *p, j = 7, *q;
+    p = &i;
+    q = &j;
+    *p = i + *q;
+    j = *p + i;
+    p = q;
+    j = *p + i;
+    i = *q + j;
+    cout << i << j << *p << *q << endl;
     return 0;
-
 }
