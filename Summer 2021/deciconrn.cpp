@@ -10,6 +10,7 @@ else {
 ((n%b)>9)?cout<<char(55+(n%b)):cout<<n%b;
 
 }
+}
 
 int main(){
  int v,u;
